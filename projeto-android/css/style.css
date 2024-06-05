@@ -1,0 +1,267 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face{
+    font-family:'Android';
+    src:url('../fonts/android.otf') format('opentype');
+    font-weight:normal;
+    font-style:normal;
+}
+
+:root{
+    --branco:#fff;
+    --cor0:#E9E6C3;
+    --cor01:#aee6c7;
+    --cor02:#79BF97;
+    --cor03:#2B8D5B;
+    --cor04:#146d3c;
+    --cor05:#043D1D;
+    --cor06: #1e9e58;
+
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-android:'Android', sans-serif;
+    --fonte-destaque:'Bebas Neue', Arial, Helvetica, sans-serif;
+}
+
+*{
+    margin:0;
+    padding:0;
+    font-family:var(--fonte-padrao);
+}
+
+body{background-color:var(--cor0);}
+
+/* Início Header */
+
+header{
+    background-image:linear-gradient(to bottom, #269859, #178044, #043D1D);
+}
+
+header > .titulo, .subtitulo{
+    text-align:center;
+}
+
+header > .titulo{
+    color: var(--branco);
+    text-transform: uppercase;
+    font-family:var(--fonte-destaque);
+    font-size: 50px;
+    font-weight: normal;
+    padding: 15px 0;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.493);
+}
+
+header > .subtitulo{
+    color:var(--branco);
+    padding: 0px 5px;
+    max-width: 450px;
+    margin:auto;
+}
+
+header > nav > ul{
+    padding: 15px 0;
+}
+
+.menu{
+    list-style-type: none;
+}
+
+nav > ul > li{
+    display:inline;
+}
+
+nav > ul > li > a{
+    font-size:1.25em;
+    text-decoration:none;
+    color:var(--cor02);
+    font-weight: bold;
+    font-family: var(--fonte-destaque);
+    font-weight:normal;
+    text-transform: uppercase;
+    padding: 8px;
+    margin-left: 6px;
+    border-radius: 5px;
+    transition-duration:0.5s;    
+}
+
+li > a:hover{
+    background-color:var(--cor03);
+    padding:10px;
+    /* color:var(--cor02);
+    transition-duration:2s; <-- opção de estilo */
+}
+
+/* Fim Header */
+
+/* Início Main */
+
+main{
+    margin:0 auto;
+    background-color:var(--branco);
+    width: 80%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+article{
+    padding: 20px;
+}
+
+main > article > h2{
+    font-family:var(--fonte-android);
+    text-transform:uppercase;
+    color:var(--cor04);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.226);
+}
+
+article > p{
+    text-align: justify;
+    /* width: 900px; */
+    text-indent: 40px;
+    padding-top: 15px;
+}
+
+.destaque{
+    font-weight:bold;
+    color:var(--cor06);
+}
+
+article > h3{
+    font-family:var(--fonte-android);
+    text-transform:uppercase;
+    color: var(--cor04);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.226);
+    margin-top: 10px;
+    background-image:linear-gradient(to right, var(--cor01), transparent);
+    padding-left: 8px;
+}
+
+.link-destaque{
+    font-weight:bold;
+    transition-duration: 0.5s;
+    padding: 2px;
+}
+
+.link-destaque {
+    text-decoration:none;
+    color:var(--cor06);
+
+}
+
+.link-destaque:hover{
+    background-color:#aee6c7;
+    padding: 2px;
+    border-radius:3px;
+}
+
+a.externo::after{
+    content:'\00A0\1F517'
+}
+
+
+
+img{
+    display:block;
+    margin: 0 auto;
+}
+
+.img_robo{
+    width:80%;
+}
+
+.img_irina{
+    margin-top: 10px;
+    width:100%;
+}
+
+.video_youtube{
+    margin: 0 -20px;
+}
+
+.video_youtube{
+    margin-top:10px;
+    background-color:var(--cor05);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.397);
+    position:relative;
+    padding-bottom: 57.9%;
+}
+
+iframe{
+    position:absolute;
+    left: 5%;
+    top: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+/* Início Aside */
+
+aside{
+    background-color:var(--cor01);
+    margin: 0 auto;
+    width:100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.397);
+}
+
+aside > h3{
+    color:var(--branco);
+    background-color:var(--cor06);
+    border-radius: 10px 10px 4px 4px;
+    padding: 7px;
+}
+
+aside > p{
+    text-align: justify;
+    text-indent: 40px;
+    padding: 15px;
+}
+
+aside > p > .link-destaque:hover{
+    background-color:#73e4a6;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+aside > ul{
+    list-style-type:"\2714\00A0\00A0";
+    list-style-position: inside;
+    columns: 2;
+}
+
+aside > ul > li{
+    margin-top: -1px;
+    margin-left: 20px;
+    cursor:default;
+}
+
+/* Fim Aside */
+
+/* Fim Article */
+
+/* Fim Main */
+
+/* Início Footer */
+
+.rodape{
+    background-color:var(--cor05);
+    color: var(--branco);
+    margin-top: 10px;
+    padding:10px;
+    text-align:center;
+}
+
+.rodape a{
+    text-decoration:none;
+    color:var(--branco);
+}
+
+.rodape a:hover{
+    color:#5be298;
+    transition-duration:1s;
+}
+
+/* Fim do Footer e Código */
