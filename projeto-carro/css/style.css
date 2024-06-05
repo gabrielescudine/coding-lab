@@ -1,0 +1,823 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,body{
+    height:100%;
+}
+.center{
+    max-width:1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+.clear{
+    clear:both;
+}
+
+.select{
+    color:red;
+    font-style: italic;
+}
+
+/* HEADER */
+
+header{
+    padding:20px 0 35px 0;
+}
+
+.logo{
+    float:left;
+}
+
+nav.menu-desktop{
+    float:right;
+    padding: 40px 0;
+}
+
+nav.menu-desktop ul li{
+    display:inline-block;
+}
+
+.menu-desktop a, .menu-mobile a{
+    text-decoration: none;
+    color:black;
+    font-variant: small-caps;
+    font-size: 1.3em;
+    padding: 0 20px;
+}
+
+nav.menu-mobile{
+    display:none;
+    float:right;
+    margin: 40px;
+    width:32px;
+    height:32px;
+    background-image: url('../img/icon_menu.png');
+    cursor:pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.menu-mobile ul{
+    display: none;
+    width:100%;
+    z-index: 999;
+    position:absolute;
+    top:15%;
+    left:0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.menu-mobile li{
+    padding: 10px 0;
+    border:1px solid #ccc
+}
+
+.menu-mobile li:hover{
+    background-color:#d8d8d8;
+    transition-duration: 0.5s;
+}
+
+/*  */
+
+/* HEADER -- BANNER!! */
+
+section.banner{
+    overflow:hidden;
+    width:100%;
+    height: auto;
+    background-image:url('../img/bg.jpg');
+    background-color:black;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.text-banner{
+    padding:100px;
+}
+
+.text-single{
+    width:314px;
+    height: 70px;
+    margin:20px 0;
+    padding: 20px 30px;
+    border-radius: 50% 0 50% 0;
+    font-variant: small-caps;
+    font-weight:100;
+    color:white;
+    background-color: #EB2D2D;
+}
+
+.text-single:nth-of-type(2){
+    width: 200px;
+}
+
+.text-single:nth-of-type(3){
+    width: 170px;
+}
+
+.text-single:nth-of-type(4){
+    color:black;
+    background-color: #fff;
+}
+
+/*  */
+
+/* SECTION VEICULOS DESTAQUE */
+
+.veiculos-destaque{
+    padding: 30px 0;
+}
+
+.titulo-destaque{
+    position:relative;
+    max-width:1400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.titulo-destaque .ln1{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1.5px;
+    background-color:#000;
+}
+
+.titulo-destaque h2{
+    position:relative;
+    padding: 0 20px;
+    top:-20px;
+    left:0; 
+    display:inline-block;
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 30px;
+    background-color:white;
+}
+
+.vitrine-veiculos{
+    float:left;
+    width:33.3%;
+    margin: 20px auto 40px auto;
+    text-align: left;
+}
+
+.vitrine-veiculos img{
+    width:90%;
+}
+
+
+.vitrine-veiculos h2{
+    font-size:1.2em;
+    font-style: italic;
+    padding:2% 0;
+}
+
+.vitrine-veiculos p{
+    font-size: 0.9em;
+    font-style: italic;
+    padding-bottom: 20px;
+}
+
+.button{
+    padding: 10px;   
+    text-decoration: none;
+    color:white;
+    background-color:#EB2D2D;
+    border-bottom: 5px solid #B21E1E;
+    display:inline-block;
+    /* text-align: center; */
+}
+
+/*  */
+
+/* COMENTÁRIOS EM DESTAQUE */
+
+.comentarios-destaque{
+    display:flex;
+}
+
+.servicos{
+    width:50%;
+    padding: 40px 0;
+    background-color:#242424;
+    color:white;
+    text-align: center;
+}
+
+.servicos-wrapper{
+    display:inline-block;
+    text-align: left;
+    padding-right:40px;
+}
+
+.servicos h2{
+    font-variant: small-caps;
+    font-style: italic;
+    font-size:1.8em;
+    margin: 10px 0;
+}
+
+.servicos ul{
+    list-style-position: inside;
+    list-style-type:lower-alpha;
+    display:inline-block;
+}
+
+.servicos li{
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.servicos-wrapper a{
+    margin-left: 20px;
+    display: inline-block;
+    vertical-align:bottom;
+}
+
+.depoimentos{
+    width:50%;
+    padding: 50px 100px ;
+    background-color:#EB2D2D;
+    color:white;
+}
+
+.depoimentos h2{
+    font-variant: small-caps;
+    font-style: italic;
+    font-size:1.8em;
+    padding: 10px 0;
+}
+
+.depoimento-wrapper p{
+    font-size: 20px;
+}
+
+.depoimento-nav{
+    color:#252525;
+    margin-top: 30px;
+}
+
+.arrow{
+    float:left;
+}
+
+.depoimento-nav img{
+    margin:0 15px;
+    cursor:pointer;
+}
+
+.nome-depoimento{
+    float:right;
+    font-size: 20px;
+}
+
+/*  */
+
+/* CONTATO */
+
+.contato{
+    margin:5% 0;
+}
+
+.contato h2{
+    position:relative;
+    padding: 0 20px;
+    top:-20px;
+    left:0; 
+    display:inline-block;
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 30px;
+    background-color:white;
+}
+
+.form{
+    /* text-align: center; */
+    margin: 0 auto;
+    max-width:600px;
+}
+
+.input-wrapper{
+    float:left;
+    padding:10px;
+    text-align: center;
+}
+
+.w100{
+    width:100%;
+}
+
+.w50{
+    width:50%;
+}
+
+input[type=text], input[type=email]{
+    width:100%;
+    padding-left: 8px;
+    height: 60px;
+    line-height: 40px;
+    border:1px solid #ccc;
+    outline:0;
+    font-size: 18px;
+}
+
+textarea{
+    width:100%;
+    height:140px;
+    resize:none;
+    outline:0;
+    border:1px solid #ccc;
+    padding: 8px;
+    font-size: 18px;
+}
+
+input[type=submit]{
+    outline:0;
+    cursor:pointer;
+    border-top:0;
+    border-left:0;
+    border-right:0;
+    padding: 15px 80px;
+    font-size: 20px;
+}
+/*  */
+
+/* FOOTER */
+
+footer.rodape{
+    width:100%;
+    padding:40px 0;
+    background-color:#252525;
+}
+
+.menu-footer{
+    float:left;
+}
+
+.menu-footer ul li{
+    display:inline-block;
+}
+
+.menu-footer a{
+    text-decoration: none;
+    color:white;
+    font-variant: small-caps;
+    font-size: 16px;
+    padding: 0 20px;
+}
+
+.rodape h3{
+    float:right;
+    color:white;
+    font-size:14px;
+}
+
+/*  */
+
+/* PÁGINA DE VENDAS */
+
+/* SECTION VENDA VEÍCULO */
+
+.vendas-veiculo{
+    padding: 70px 0;
+}
+
+.sidebar{
+    margin-top: 30px;
+    float:left;
+    width:30%;
+}
+
+.search-by-price{
+    width:90%;
+}
+
+.search-by-price h2{
+    font-size:22px;
+    font-variant: small-caps;
+}
+
+.bar-price{
+    position:relative;
+    width:100%;
+    height:20px;
+    margin-top: 8px;
+    border-radius:20px;
+    border:1px solid #ccc;
+}
+
+.bar-price-fill{
+    position:absolute;
+    width:0;
+    height:20px;
+    top:0;
+    left:0;
+    background-image:linear-gradient(to bottom,rgb(255,255,255),rgb(180,180,180));
+    border-radius:20px;
+}
+
+.bar-price-button{
+    position:absolute;
+    top:-3px;
+    left:0;
+    width:26px;
+    height:26px;
+    border-radius:8px;
+    border:1px solid #777;
+    background-image:linear-gradient(to bottom,rgb(255,255,255),rgb(180,180,180));
+    cursor:pointer;  
+}
+
+.value-search p{
+    margin-top: 5px;
+    font-size:13px;
+    font-weight: bold;
+}
+
+.value-search p:nth-of-type(1){
+    float:left;
+}
+
+.value-search p:nth-of-type(2){
+    float:right;
+}
+
+.search-by-year{
+    margin-top: 40px;
+}
+
+.search-by-year h2{
+    font-size:22px;
+    font-variant: small-caps;
+    margin-bottom: 10px;
+}
+
+.form-check-wrapper input[type=checkbox]{
+    display:none;
+}
+
+.form-check-wrapper label{
+    display:inline-block;
+    margin:5px 0;
+    width: 20px;
+    height:20px;
+    border:1px solid rgb(190,190,190);
+    cursor:pointer;
+    border-radius:3px;
+    vertical-align: middle;
+    position:relative;
+}
+
+.form-check-wrapper span{
+    font-weight: bold;
+    font-size:14px;
+    vertical-align: middle;
+}
+
+.form-check-wrapper .check{
+    position:absolute;
+    top:10px;
+    left:10px;
+    transform:translate(-50%,-50%);
+    width:8px;
+    height:8px;
+    border-radius:4px;
+    background-color:#000;
+    display:none;
+}
+
+.form-check-wrapper input[type=checkbox]:checked + label > .check{
+    display: block;
+}
+
+.vitrine-vendas{
+    float:left;
+    width:70%;
+}
+
+/*  */
+
+/* PÁGINA VEÍCULO INDIVIDUAL */
+
+    .veiculo-single .center{
+        padding:60px 2% 0 2%;
+    }
+
+    .info-carro{
+        display: inline-block;
+        width:60%;
+    }
+
+    .foto-destaque{
+        width:100%;
+        padding-top:70%;
+        /* background-color:#ccc; */
+        /* background-image: url('../img/carro1.jpg'); */
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .media-parent{
+        width:100%;
+        padding:36px;
+        position:relative;
+    }
+
+    .arrow-left-nav{
+        position:absolute;
+        top:50%;
+        left:8px;
+        transform:translateY(-50%);
+        width:22px;
+        height:22px;
+        background-image:url('../img/arrow-left.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:100% 100%;
+        cursor:pointer;
+    }
+
+    .arrow-right-nav{
+        position:absolute;
+        top:50%;
+        right:8px;
+        transform:translateY(-50%);
+        width:22px;
+        height:22px;
+        background-image:url('../img/arrow-right.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:100% 100%;
+        cursor: pointer;
+    }
+
+    nav.media-carro{
+        width:100%;
+        overflow:hidden;
+    }
+
+    .border-img{
+        padding:9px;
+        float:left;
+    }
+
+    .mini-img{
+        width:100%;
+        padding-top:70%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        cursor:pointer;
+    }
+
+    .description-veiculo{
+        display:inline-block;   
+        padding: 20px;
+        vertical-align: top;
+    }
+
+    .description-veiculo h2{
+        margin-bottom: 25px;
+    }
+
+    .description-veiculo p{
+        width:100%;
+        max-width: 200px;
+        font-weight: bold;
+        font-size:15px;
+        text-align: left;
+        margin-bottom: 25px;
+    }
+
+    .info-bread{
+        text-align: left;
+        padding-left:35px;
+    }
+
+    .info-bread span{
+        padding:0 20px;
+    }
+
+    .info-bread a{
+        text-decoration: none;
+        color:black;
+        font-variant: small-caps;
+    }
+
+    .info-bread a:last-child{
+        color:#EB2D2D;
+    }
+
+/*  */
+
+/* PÁGINA SOBRE */
+
+/* SECTION SOBRE */
+
+.sobre{
+    padding:60px 0 0 0;
+}
+
+.sobre .center{
+    max-width:800px;
+    padding: 20px 2%;
+}
+
+.sobre-destaque{
+    width:100%;
+    padding-top:60%;
+    background-color:#ccc;
+}
+
+.description-author > h3{
+    text-align: left;
+    font-variant: small-caps;
+    font-size: 24px;
+    padding: 3% 0 1% 0;
+}
+
+.description-author p{
+    text-align: justify;
+    padding: 1% 2%;
+    line-height: 1.5em;
+    font-size:15px;
+}
+
+.img-small{
+    float:left;
+    width:30%;
+    padding-top:30%;
+    background-color:#ccc;
+    margin-top:10px;
+}
+
+.second-description p{
+    float:left;
+    width:70%;
+    padding: 3%;
+    font-size:15px;
+    line-height:1.5em;
+    text-align: justify;
+}
+/*  */
+
+/*  */
+
+/* RESPONSIVO */
+
+@media screen and (max-width: 1060px) {
+    section.banner{
+        background-size: auto;
+        background-position: left bottom;
+    }
+
+    .comentarios-destaque{
+        flex-direction: column;
+    }
+
+    .servicos{
+        width:100%;
+    }
+
+    .servicos-wrapper{
+        padding-right:0;
+    }
+
+    .servicos-wrapper ul{
+        display:block;
+    }
+
+    .servicos-wrapper a{
+        display:block;
+        margin-left: 0;
+        text-align: center;
+        margin-top:20px;
+    }
+
+    .depoimentos{
+        width:100%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .menu-desktop{
+        display:none;
+    }
+    nav.menu-mobile{
+        display:block;
+    }
+    .text-banner{
+        padding: 40px;
+    }
+
+    .veiculos-destaque .titulo-destaque > h2{
+        font-size: 25px;
+    }
+
+    .vitrine-veiculos{
+        float:none;
+        width:90%;
+        text-align: center;
+    }
+
+    .input-wrapper{
+        float:none;
+    }
+
+    .w50{
+        width:100%;
+    }
+
+    .menu-footer{
+        float:none;
+        display:none;
+    }
+
+    .rodape h3{
+        float:none;
+        text-align: center;
+        font-size:18px; 
+    }
+
+    .sidebar{
+        float:none;
+        width:100%;
+        text-align: center;
+    }
+
+    .search-by-price{
+        float:none;
+        display:inline-block;
+    }
+
+    .search-by-year{
+        float:none;
+        display:inline-block;
+        text-align: left;
+    }
+
+    .vitrine-vendas{
+        float:none;
+        width:100%
+    }
+
+    /* 
+    Outra maneira de fazer, dividindo em 3, porém prefiro que fique 100%
+
+    .vitrine-vendas .vitrine-veiculos{
+        float:left;
+        width:33.3%;
+    } 
+
+    */
+
+    .info-carro{
+        display: block;
+        width:100%;
+    }
+
+    .description-veiculo{
+        display:block;   
+        padding: 20px;
+        text-align: center;
+    }
+
+    .description-veiculo h2{
+        margin-bottom: 25px;
+    }
+
+    .description-veiculo p{
+        max-width:100%;
+        font-weight: bold;
+        font-size:15px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .description-veiculo a{
+        margin: 20px 0;
+    }
+
+    .second-description .img-small{
+        float:none;
+        width:100%;
+        padding-top:100%;
+    }
+
+    .second-description p{
+        float:none;
+        padding: 1% 2% 0 2%;
+        width:100%;
+    }
+}
+
+/*  */

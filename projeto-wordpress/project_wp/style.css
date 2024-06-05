@@ -1,0 +1,601 @@
+/* 
+Theme Name: Projeto WP
+Theme URI: https://scrapbookbiomedstore.com
+Author: Gabriel Escudine
+Author URI: https://github.com/gabrielescudine  
+Description: Projeto feito para entender como funciona o WordPress
+Version: 1.0
+*/
+
+/* Configurações Gerais */
+
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html,body{
+    height:100%;
+}
+.clear{
+    clear:both;
+}
+.center{
+    max-width: 1280px;
+    margin:0 auto;
+    padding: 0 2%;
+}
+.w-50{
+    float:left;
+    width:50%;
+    padding: 0 15px;
+}
+
+.selected{
+    color:white !important;
+}
+
+/* Configurações Header */
+
+header{
+    background-image:linear-gradient(114deg, #250e8a, #00f9f7);
+    padding-top:40px;
+    padding-bottom:80px;    
+}
+
+.logo{
+    float:left;
+}
+
+.menu-desktop{
+    float:right;
+}
+
+.menu-desktop ul li{
+    display:inline-block;
+    margin: 0 15px;
+}
+
+.menu-desktop ul li a:hover{
+    color:#fff;
+    transition-duration: 0.5s;
+}
+
+.menu-desktop a{
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.7);  
+}
+
+.menu-mobile{
+    width:34px;
+    height:34px;
+    display:none;
+    float:right;
+    cursor:pointer;
+}
+
+.menu-mobile ul{
+    display:none;
+    width:100%; 
+    position:absolute;
+    z-index: 999;
+    top:10%;
+    left:0;
+    text-align: center;
+    list-style-type: none;
+    background-color:#fff;
+}
+
+.menu-mobile ul li{
+    padding:10px 0;
+    border-bottom:1px solid black;
+}
+
+.menu-mobile a{
+    text-decoration: none;
+    color:rgb(0, 0, 0);  
+}
+
+.menu-mobile ul li:hover{
+    background-color:rgb(216, 216, 216);
+    transition-duration: 0.5s;
+}
+
+.menu-mobile i{
+    color:white;
+    font-size: 30px;
+}
+
+.team-desc{
+    color:white;
+    margin-top:100px;
+}
+
+.team-desc h1{
+    max-width: 480px;
+    font-size:2.4em;
+}
+
+.team-desc p{
+    font-weight: 200;
+    font-size:1.1em;
+    max-width: 300px;
+    margin-top:20px;
+}
+
+.team-desc a{
+    display:inline-block;
+    margin:30px 0;
+    padding: 10px;
+    text-decoration: none;
+    color:#250e8a;
+    background-color:#ffca00;
+    font-size:13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.team-img{
+    margin-top:50px;
+}
+
+.team-img img{
+    max-width: 100%;
+}
+
+/* Configurações Arrow */
+
+.circle{
+    margin:0 auto;
+    position:relative;
+    box-shadow: 0 10px 25px 0 rgba(37, 15, 139, 0.1);
+}
+
+.circle i{
+    color:#0c3f8a;
+    background-color:white;
+    padding: 20px;
+    border-radius:50%;
+    font-size:25px;
+    position:absolute;
+    transform:translateX(-50%);
+    left:50%;
+    top:-30px;
+}
+
+/*  */
+
+/* Configurações Slider */
+
+section.slider-clients{
+    padding:70px 0;
+}
+
+.slider-clients img{
+    padding:0 20px; 
+}
+
+.slider-content{
+    max-width:450px;
+    overflow:hidden;
+    margin:0 auto;
+}
+
+/*  */
+
+/****SLICK SLIDER****/
+
+.slick-dotted ul{
+	list-style-type: none;
+	text-align: center;
+	position: relative;
+	margin-top:10px;
+}
+
+.slick-dotted li{
+	display: inline-block;
+	margin: 0 7px;
+}
+
+.slick-dotted button:focus{
+	outline: 0;
+}
+
+.slick-dotted li button{
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	color: #d8d8d8;
+	border-width: 0;
+	background: #d8d8d8;
+	opacity: 1;
+	cursor: pointer;
+}
+
+li.slick-active button{
+	background: #0c3f8a;
+	color: #0c3f8a;
+}
+
+.slick-slide:focus { outline: none; }
+
+/**END SLICK**/
+
+/* Configurações Contribution */
+
+section.contribution{
+    padding:30px 0 60px 0;
+}
+
+.contribution h2{
+    text-align: center;
+    font-variant: small-caps;
+    font-size:2.3em;
+}
+
+.icon-contributions{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.icon-single{
+    width:33.3%;
+    margin-top:90px;
+    padding:0 5%;
+}
+
+.icon-single h3{
+    text-align: center;
+    padding: 10px 0;
+}
+
+.icon-single p{
+    text-align: center; 
+    font-size:15px;
+}
+
+.icon-single img{
+   display:block;
+   margin: 10px auto 0 auto;
+   max-width:100%;
+}
+
+/*  */
+
+/* Configurações About Team */
+
+section.about-team{
+    background-color:#F5F8FD;
+    padding:10px 0;
+}
+
+.about-team .center > .team-desc{
+    position:relative;
+    top:-5px;
+}
+
+.about-team .center > .team-desc img{
+    position:absolute;
+    top:-65px;
+    left:0;
+}
+
+.about-team .center > .team-desc h2{
+    color:black;
+    font-weight:400;
+    max-width:400px;
+    font-size:2em;
+}
+
+.about-team .center > .team-desc p{
+    color:black;
+    font-weight:300;
+    max-width:400px;
+    font-size:1em;
+}
+
+/*  */
+
+/* Configurações Depoimentos */
+
+.depoimentos{
+    padding:120px 0;
+    background-color:#23188f;
+    color:white;
+    text-align: center;
+}
+
+.box-depoimentos{
+    width:100%;
+    display:block;
+    overflow:hidden;
+}
+
+.depoimento-single{
+    width:100%;
+    display:inline-block;
+}
+
+.depoimentos h2{
+    font-size: 3em;
+    font-variant: small-caps;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.depoimento-single p:first-child{
+    max-width:800px;
+    line-height:23px;
+    display:inline-block;
+    margin-bottom: 20px;
+}
+
+.depoimento-single p:nth-of-type(2){
+    font-weight: 300;
+    font-style: italic;
+}
+
+.depoimento-single img{
+    margin-top: 10px;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+}
+
+/*  */
+
+/* Configurações Metodologia */
+
+section.metodologia{
+    position:relative;
+    left:0;
+    top:-70px;;
+    max-width:1000px;
+    margin:0 auto;
+    text-align: center;
+    padding:60px;
+    border-top:5px solid #ffca00;
+    background-color:#fff;
+    border-radius:8px;
+    box-shadow:10px 20px 60px 0 rgba(0,0,0,0.6);
+}
+
+.metodologia h2{
+    font-variant: small-caps;
+    font-size:2.3em;
+    padding: 15px 0;
+}
+
+.metodologia p{
+    padding-top: 20px;
+    color:#a0a0a0;
+    line-height:1.5em;
+}
+
+.metodologia a{
+    display: inline-block;
+    margin:40px 0 40px 0;
+    padding:15px;
+    text-decoration: none;
+    color:white;
+    background-color:#23188f;
+    border-radius:8px;
+}
+
+/*  */
+
+/* Configurações Footer */
+
+footer{
+    padding:100px 0;
+}
+footer .center{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-footer{
+    width:20%;
+}
+
+.col-footer:last-child{
+    width:40%;
+    text-align:right;
+}
+
+.col-footer h2{
+    color:#232931;
+    font-variant: small-caps;
+    padding-bottom:15px;
+}
+
+.col-footer a{
+    display:block;
+    text-decoration: none;
+    color:#a0a0a0;
+    font-size:15px;
+    margin-bottom: 15px;
+}
+
+
+/*  */
+
+/* PÁGINA SOBRE */
+
+/* Configurações Sobre Equipe */
+
+section.sobre-equipe{
+    padding:50px 0;
+}
+
+section.sobre-equipe img{
+    max-width:100%;
+}
+
+.text-team h2{
+    font-size:42px;
+    color:#202020;
+    font-variant: small-caps;
+}
+
+.text-team p{
+    color:#202020;
+    font-size:18px;
+    margin:10px 0 20px 0;
+    line-height:26px;
+}
+
+.img-team{
+    padding: 60px 0 0 0;
+}
+
+/*  */
+
+/* Configurações Gallery Images */
+
+section.gallery-images{
+    padding:120px 0;
+    background-color:#f4f9fd;
+    color:white;
+    text-align: center;
+}
+
+.images-slider img{
+    padding: 5px;
+}
+
+/*  */
+
+/*  */
+
+/* PÁGINA CONTATO */
+
+/* Configurações Contato */
+
+section.contato{
+    padding:40px 0;
+}
+
+.contato-info h2{
+    color:#202020;
+    font-weight: 400;
+    font-size:42px;
+    padding:10px 0;
+}
+
+.contato-info p{
+    font-size:15px;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.map-container{
+    position:relative;
+    width:100%;
+    padding-top:80%;
+}
+
+div#map{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: #ccc;
+}
+
+/*  */
+
+/* Configurações Contato Form */
+
+.contato-form{padding:0 40px;}
+
+input[type=text], input[type=email]{
+    margin-bottom: 10px;
+    width:100%;
+    height:48px;
+    padding-left: 6px;
+    box-shadow:0 2px 4px 0 rgba(92,99,110,0.1);
+    outline:0;
+    border:1px solid #ccc;
+}
+
+input[type=text]:nth-of-type(1){
+    margin-top:10px;
+}
+
+input[type=submit]{
+    margin:20px auto;
+    padding: 20px 60px;
+    color:white;
+    background-color:#23188f;
+    font-size:13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border:0;
+    border-radius: 5px;
+    outline:0;
+    cursor:pointer;
+}
+
+textarea{
+    width:100%;
+    height:150px;
+    padding: 6px;
+    resize:none;
+    outline:0;
+    border:1px solid #ccc;
+    box-shadow:0 2px 4px 0 rgba(92,99,110,0.1);
+}
+
+select{
+    width:100%;
+    height:48px;
+    padding-left:6px;
+    margin-bottom:10px;
+    border:1px solid #ccc;
+    outline:0;
+    box-shadow:0 2px 4px 0 rgba(92,99,110,0.1);
+}
+
+/*  */
+
+/*  */
+
+/* Configurações Responsivo */
+
+@media screen and (max-width: 768px){
+
+    .menu-desktop{display:none;}
+    .menu-mobile{display:block;}
+    .w-50{float:none;width:100%;}
+
+    .icon-contributions{
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon-single{margin-top:30px;padding:0;}
+
+    .col-footer{
+        width:100% !important;
+        text-align: center !important;
+        margin-bottom:30px;
+    }
+
+    .img-team{padding:0;}
+
+    input[type=submit]{
+        margin:20px auto;
+    }
+
+}
