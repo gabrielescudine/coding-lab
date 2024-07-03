@@ -20,6 +20,12 @@ html,body{
 
 .clear{clear:both;}
 
+.w-50{
+    float:left;
+    width:50%;
+    padding:0 20px;
+}
+
 /* Fim Config. Gerais */
 
 /* Config. Header */
@@ -75,7 +81,7 @@ section.icon-socials a{
 }
 
 nav.desktop{
-    margin-top:25px;
+    margin-top:30px;
     float:right;
 }
 
@@ -83,7 +89,7 @@ nav.desktop ul li{
     display:inline-block;
 }
 
-nav.desktop ul li a{
+nav.desktop a{
     text-decoration: none;
     color:#fff;
     font-size: 1.2em;
@@ -91,11 +97,48 @@ nav.desktop ul li a{
     margin:0 30px;
 }
 
+nav.mobile{
+    float:right;
+    display:none;
+    z-index: 1;
+}
+
+nav.mobile i{
+    position: relative;
+    top:30px;
+    font-size: 2em;
+    color:#fff;
+    cursor: pointer;
+}
+
+nav.mobile ul{
+    display:none;
+    position:absolute;
+    top:95px;
+    left:0;
+    width:100%;
+    background-color:#fff;
+}
+
+nav.mobile ul li{
+    list-style-type: none;
+    text-align: center;
+    border-bottom:1px solid #777;
+    padding:10px 0;
+}
+
+nav.mobile a{
+    text-decoration: none;
+    color:#000;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
 section.conteudo-chamada{
     position: relative;
     max-width: 700px;
     margin: 40px 0;
-    z-index: 2;
+    z-index: 1;
 }
 
 section.conteudo-chamada h2{
@@ -242,13 +285,162 @@ section.conteudo-chamada a{
 
 /* Fim Config. Parallax */
 
+/* Config. Section Final */
+
+section.final{
+    padding:50px 0;
+}
+
+.section-contact h2, .about-team h2{
+    position:relative;
+    font-weight: 400;
+    color:#777;
+}
+
+.border-effect{
+    position: absolute;
+    width:50px;
+    height:2px;
+    background-color: #777;
+    transition-duration: 0.5s;
+}
+
+.section-contact h2:hover .border-effect, .about-team h2:hover .border-effect{
+    width:100px;
+}
+
+.section-contact form{
+    margin-top:10px;
+}
+
+.section-contact input:not(input[type=submit]){
+    width:100%;
+    height:40px;
+    outline:0;
+    border:1px solid #ccc;
+    padding-left:8px;
+    margin: 5px 0;
+}
+
+.section-contact textarea{
+    width:100%;
+    height:150px;
+    margin:5px 0;
+    padding:8px;
+    border:1px solid #ccc;
+    outline:0;
+    resize:vertical;
+}
+
+.section-contact input[type=submit]{
+    display:block;
+    border:0;
+    font-weight: 300;
+    font-size:1.2em;
+    color:#fff;
+    background-color: #1B8FFF;
+    margin-top:10px;
+    padding: 10px 30px;
+    border-radius: 15px;
+    cursor:pointer;
+    transition-duration: 0.5s;
+}
+
+.section-contact input[type=submit]:hover{
+    background-color:#146fc4;
+}
+
+section.final > .w-50{
+    width:47%;
+    margin:0 2%;
+}
+
+.team-single{
+    margin-top:15px;
+    border:1px solid #ccc;
+    box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
+    min-height:300px;
+}
+
+.top-user{
+    border-bottom: 1px solid #777;
+}
+
+.top-user .image-user{
+    display:inline-block;
+    vertical-align: middle;
+    margin:5px 0;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background-color:#ccc;
+}
+
+.info-user{
+    display:inline-block;
+    padding-left:8px;
+    vertical-align: middle;
+}
+
+.top-user .info-user h3{
+    font-weight: 400;
+}
+
+.top-user .info-user p{
+    font-weight: 300;
+    color:#777;
+    margin-bottom:5px;
+}
+
+.content-user p{
+    margin:10px 0 20px 0;
+    font-weight: 300;
+    line-height:22px;
+    text-align: justify;
+}
+
+/* Fim Config. Section Final */
+
+/* Config. Footer */
+
+footer{
+    text-align: center;
+    width:100%;
+    padding:20px 2%;
+    color:#fff;
+    background-color:#2692FF;
+}
+
+/* Fim Config. Footer */
+
 /* Config. Responsividade */
 
 @media screen and (max-width: 768px){
+
+    nav.desktop{
+        display:none;
+    }
+
+    nav.mobile{
+        display:block;
+    }
+
+    .w-50{
+        width:100%;
+        /* float:none; */
+        margin:20px 0;
+    }
+
     .planos-single{
         width:100%;
         margin: 15px 0;
     }
+
+    .section-contact input[type=submit]{
+        text-align: center;
+        margin: 10px auto;
+    }
+
 }
 
 /* Fim Config. Responsividade */

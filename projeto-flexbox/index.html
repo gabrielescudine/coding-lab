@@ -28,6 +28,15 @@
                         <li><a href="#">Contato</a></li>
                     </ul>
                 </nav><!--Desktop-->
+
+                <nav class="mobile">
+                    <i class="fa-solid fa-bars"></i>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav><!--Mobile-->
                 <div class="clear"></div>
             </header>
 
@@ -113,8 +122,65 @@
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi quis voluptatem voluptas tempora quam quod, exercitationem laudantium doloremque nostrum corporis unde commodi doloribus delectus facere beatae quae alias earum consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolor maxime dolores alias sapiente nostrum aspernatur aliquid ex blanditiis, iusto excepturi, distinctio pariatur, odio praesentium nulla quod ipsa officia voluptates.</p>
             </div><!--Centralização-->
         </section><!--Parallax-->
-    </main>
 
+        <section class="final">
+            <div class="center">
+
+                <section class="section-contact w-50">
+                    <h2><div class="border-effect"></div>Entre em contato!</h2>
+                    <form action="">
+                        <input type="text" name="nome" id="" placeholder="Insira seu nome...">
+                        <input type="email" name="email" id="" placeholder="Insira seu e-mail...">
+                        <textarea name="textarea" id="" placeholder="Mensagem..."></textarea>
+                        <input type="submit" value="Enviar">
+                    </form>
+                </section><!--Section Contato-->
+                <section class="about-team w-50">
+                    <h2><div class="border-effect"></div>Conheça nosso time!</h2>
+                    <div class="team-single w-50">
+                        <div class="top-user">
+                            <div class="image-user"></div>
+                            <div class="info-user">
+                                <h3>Gabriel Escudine</h3>
+                                <p>Estudante Front-End</p>
+                            </div><!--Info User-->
+                        </div><!--Top User-->
+                        <div class="content-user">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil reprehenderit eos possimus maiores minus dolores saepe similique? Ullam quia corrupti eligendi cupiditate adipisci dolor soluta, est dolore doloremque, reiciendis sapiente!</p>
+                        </div><!--Content User-->
+                    </div><!--Team Single/W-50-->
+
+                    <div class="team-single w-50">
+                        <div class="top-user">
+                            <div class="image-user"></div>
+                            <div class="info-user">
+                                <h3>Fulano da Silva</h3>
+                                <p>Estudante Back-End</p>
+                            </div><!--Info User-->
+                        </div><!--Top User-->
+                        <div class="content-user">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil reprehenderit eos possimus maiores minus dolores saepe similique? Ullam quia corrupti eligendi cupiditate adipisci dolor soluta, est dolore doloremque, reiciendis sapiente!</p>
+                        </div><!--Content User-->
+                    </div><!--Team Single/W-50-->
+
+                    <div class="clear"></div>
+                </section><!--Sobre o Time-->
+
+                <div class="clear"></div>
+            </div><!--Centralização-->
+        </section><!--Section Final-->
+    </main>
+    <footer>
+        <p>Todos os direitos reservados</p>
+    </footer>
     <script src="https://kit.fontawesome.com/f79c55981d.js" crossorigin="anonymous"></script>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function(){
+            $('nav.mobile').click(function(){
+                $('nav.mobile ul').slideToggle();
+            })
+        })
+    </script>
 </body>
 </html>
