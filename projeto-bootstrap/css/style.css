@@ -1,0 +1,151 @@
+main{
+    position:relative;
+    top:55px;
+}
+
+.section-apresentacao{
+    position: relative;
+    width:100%;
+    min-height: 600px;
+    background-image:url('../img/bg.jpg');
+    background-size: cover;
+    background-position: bottom center;
+    background-attachment: fixed;
+}
+
+.overlay{
+    z-index: 1;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.4)
+}
+
+.fix-index{
+    position: relative;;
+    z-index: 2;
+}
+
+.content-apresentacao{
+    color:#fff;
+    display:inline-block;
+    padding:140px 0;
+}
+
+.content-apresentacao h2{
+    font-weight: 400;
+}
+
+.content-apresentacao p{
+    font-weight: 300;
+    line-height: 28px;
+    text-align: justify;
+}
+
+.space-between{
+    padding-right:60px;
+}
+
+.col-md-6:nth-of-type(2) button{
+    margin-top:10px;
+    width:200px;
+}
+
+.section-chamada{
+    background-color:#0D6EFC;
+    text-align: center;
+    padding:5px 0;
+    color:#fff;
+}
+
+.conteudo-modal{
+    padding:100px 0;
+}
+
+.custom-title{
+    position:relative;
+}
+
+.custom-title h2{
+    font-weight: 400;
+    margin-top:8px;
+    display:inline-block;
+    text-transform: uppercase;
+}
+
+.custom-title .effect-line{
+    transition-duration: 1s;
+    position:absolute;
+    top:0;
+    left:0;
+    width:120px;
+    height:4px;
+    background-color:#0D6EFC;
+    border-radius:10px;
+}
+
+.custom-title:hover .effect-line{
+    width:160px;
+}
+
+.conteudo-diferencial h2{
+    padding: 10px 0;
+}
+
+.conteudo-contato{
+    padding:100px 0;
+}
+
+.conteudo-contato .col-md-12 > .row{
+    padding:20px 0;
+}
+
+.conteudo-contato .col-md-12 input[type=email]{
+    margin:10px 0;
+}
+
+.conteudo-contato .col-md-12 button{
+    margin:10px 0;
+    width:200px;
+}
+
+footer:nth-of-type(1){
+    padding:40px 0;
+    color:#fff;
+    background-color: #292929;
+}
+
+footer h2{
+    font-weight: 400;
+}
+
+footer ul{
+    padding:0;
+    margin:0;
+}
+
+footer ul li{
+    list-style-type: none;
+    padding:3px 0;
+}
+
+footer ul li a{
+    color:#fff;
+    text-decoration: none;
+}
+
+footer ul li a:hover{
+    color:#0D6EFC;
+}
+
+footer:nth-of-type(2){
+    color:#fff;
+    background-color:#1d1d1d;
+    padding:10px 0;
+}
+
+footer:nth-of-type(2) p{
+    margin:0;
+}
