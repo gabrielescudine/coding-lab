@@ -1,0 +1,459 @@
+:root {
+    --backgroundBranco: #f5f5f5;
+    --backgroundAzul: #EAF2FD;
+    --corTexto: #464646;
+    --branco: #fff;
+    --azul: #2A7AE4;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+body {
+    background-color: var(--backgroundBranco);
+}
+
+/* Configurações Cabeçalho */
+
+.cabecalho {
+    padding: 40px 0;
+}
+
+.cabecalho__logo--icon i {
+    margin-right: 8px;
+}
+
+.cabecalho__menu--navegacao ul li {
+    display: inline-block;
+    font-size: 0.9em;
+    color: var(--corTexto);
+    margin-right: 20px;
+}
+
+
+/* Fim Configurações Cabeçalho */
+
+/* Configurações Chamada */
+
+.chamada {
+    padding: 40px 0;
+}
+
+.chamada__texto {
+    width: 60%;
+}
+
+.chamada__texto--titulo h1 {
+    font-size: 3.25em;
+}
+
+.chamada__texto--subtitulo p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    margin-top: 30px;
+
+}
+
+.chamada__texto--linkExterno {
+    margin-top: 30px;
+}
+
+.chamada__texto--linkExterno a {
+    margin-right: 40px;
+}
+
+.chamada__imagem {
+    width: 40%;
+}
+
+.chamada__imagem img {
+    max-width: 100%;
+}
+
+/* Fim Configurações Chamada */
+
+/* Configurações Sobre Mim */
+
+.sobreMim {
+    padding: 40px 0;
+    background-color: var(--backgroundAzul);
+}
+
+.sobreMim__titulo h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.sobreMim__descricao p {
+    display: inline-block;
+    margin-top: 20px;
+    max-width: 750px;
+    line-height: 1.4em;
+}
+
+/* Fim Configurações Sobre Mim */
+
+/* Configurações Skills & Hobbies*/
+
+.skills,
+.hobbies {
+    padding: 40px 0;
+}
+
+.skills__titulo h1,
+.hobbies__titulo h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.skills>.container,
+.hobbies>.container {
+    justify-content: center;
+    padding: 40px;
+}
+
+.skills__box,
+.hobbies__box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skills__box--single,
+.hobbies__box--single {
+    display: flex;
+    width: 176px;
+    height: 174px;
+    background-color: var(--branco);
+}
+
+.skills__box--single-conteudo,
+.hobbies__box--single-conteudo {
+    align-self: flex-end;
+    padding: 4% 6%;
+}
+
+.skills__box--single-conteudo i,
+.hobbies__box--single-conteudo i {
+    color: var(--azul);
+    font-size: 1.8em;
+    margin-bottom: 8px;
+}
+
+/* Fim Configurações Skills & Hobbies */
+
+/* Configurações Formação Acadêmica */
+
+.formacao {
+    width: 100%;
+    padding: 40px 0;
+    background-color: var(--backgroundAzul);
+}
+
+.formacao__titulo h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.formacao__box {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.formacao__box--single {
+    padding: 16px;
+}
+
+.formacao__box--single-image img {
+    max-width: 100%;
+}
+
+.formacao__box--single-conteudo {
+    margin-top: 5px;
+}
+
+.formacao__box--single-conteudo p {
+    font-size: 0.7em;
+    margin-top: 5px;
+}
+
+/* Fim Configurações Formação Acadêmica */
+
+/* Configurações Experiência Profissional */
+
+.experiencia {
+    width: 100%;
+    padding: 40px 0;
+}
+
+.experiencia__titulo h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.experiencia__box {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.experiencia__box--single {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 8px;
+}
+
+.experiencia__box--single:nth-of-type(2),
+.experiencia__box--single:nth-of-type(4) {
+    flex-direction: row-reverse;
+}
+
+.experiencia__box--single-display img {
+    max-width: 100%;
+}
+
+.experiencia__box--single-conteudo {
+    align-self: center;
+}
+
+.experiencia__box--single-conteudo h2 {
+    font-size: 1.4em;
+    margin: 5px 0;
+}
+
+.experiencia__box--single-conteudo p {
+    margin: 5px 0;
+}
+
+.experiencia__box--single-conteudo a:nth-of-type(1) {
+    display: inline-block;
+    padding: 16px;
+    border: 1px solid var(--azul);
+    color: var(--azul);
+}
+
+.experiencia__box--single-conteudo a:nth-of-type(2) {
+    display: inline-block;
+    padding: 16px;
+    border: 1px solid var(--azul);
+    background-color: var(--azul);
+    color: var(--branco);
+}
+
+/* Fim Configurações Experiência Profissional */
+
+/* Configurações Contato */
+
+.contato {
+    width: 100%;
+    padding: 40px 0;
+    background-color: var(--backgroundAzul);
+}
+
+.contato>.container {
+    justify-content: unset;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contato__image img {
+    max-width: 100%;
+}
+
+.contato__conteudo {
+    justify-content: center;
+    align-self: center;
+}
+
+.contato__conteudo--descricao h1 {
+    font-size: 2.5em;
+}
+
+.contato__conteudo--descricao p {
+    line-height: 1.2em;
+}
+
+.contato__conteudo--form {
+    margin-top: 20px;
+}
+
+.contato__conteudo--form input[type="text"],
+.contato__conteudo--form input[type="email"] {
+    outline: 0;
+    width: 100%;
+    margin: 8px 0;
+    height: 56px;
+    line-height: 56px;
+    padding-left: 12px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contato__conteudo--form textarea {
+    outline: 0;
+    width: 100%;
+    height: 120px;
+    padding: 12px;
+    resize: vertical;
+    border-bottom: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contato__conteudo--form input[type="text"]:focus,
+.contato__conteudo--form input[type="email"]:focus,
+.contato__conteudo--form textarea:focus {
+    border-bottom: 4px solid var(--azul);
+    transition-duration: 1s;
+}
+
+.contato__conteudo--form input[type="submit"] {
+    display: inline-block;
+    padding: 16px;
+    margin: 8px 0;
+    color: var(--branco);
+    background-color: var(--azul);
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+/* Fim Configurações Contato */
+
+/* Configurações Rodapé */
+
+.rodape {
+    width:100%;
+    padding: 30px 0;
+    background-color: var(--branco)
+}
+
+.rodape__titulo {
+    width:100%;
+    text-align: center;
+}
+
+.rodape__titulo h2 {
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.rodape__titulo p {
+    font-style: italic;
+}
+
+/* Fim Configurações Rodapé */
+
+/* Configurações Responsivas */
+
+@media screen and (max-width:1024px) {
+    .cabecalho__menu--navegacao>ul li {
+        display: none;
+    }
+
+    .cabecalho__menu--navegacao>ul li:nth-of-type(6) {
+        display: block;
+    }
+
+    .sobreMim__descricao p {
+        max-width: 1024px;
+    }
+
+    .skills__box,
+    .hobbies__box {
+        justify-content: space-between;
+    }
+
+    .skills__box--single,
+    .hobbies__box--single {
+        flex-basis: calc(33.33% - 20px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .chamada__texto {
+        width: 80%;
+    }
+
+    .chamada__texto--titulo h1 {
+        font-size: 1.375em;
+    }
+
+    .chamada__texto--subtitulo p {
+        font-size: 1em;
+    }
+
+    .chamada__imagem {
+        width: 20%;
+    }
+
+    .experiencia__box--single:nth-of-type(2),
+    .experiencia__box--single:nth-of-type(4) {
+        flex-direction: row;
+    }
+
+    .contato__image {
+        display:none;
+    }
+}
+
+@media screen and (max-width:680px) {
+
+    .chamada {
+        padding-top: 0;
+    }
+
+    .chamada>.container {
+        flex-wrap: wrap-reverse;
+    }
+
+    .chamada__texto {
+        width: 100%;
+    }
+
+    .chamada__imagem {
+        margin-bottom: 12px;
+    }
+
+    .sobreMim__descricao p {
+        max-width: 100%;
+    }
+
+    .skills__box--single,
+    .hobbies__box--single {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width:480px) {
+    .cabecalho__menu--navegacao ul li {
+        font-size: 0.5em;
+        margin-right: 5px;
+    }
+
+    .chamada__texto--linkExterno a {
+        margin-right: 0;
+        margin-top: 20px;
+        display: block;
+        text-align: center;
+    }
+}
