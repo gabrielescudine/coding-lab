@@ -2,8 +2,6 @@
 
 Welcome to my projects repository! This repository serves as a collection of various projects that I have worked on, ranging from Front-End development to Data Science. Each project is organized into its respective category for easy navigation.
 
-## 📌 Table of Contents
-
 ## 🔍 About
 
 This repository is a compilation of different projects I have created or worked on as part of my learning and professional development. It includes:
