@@ -1,0 +1,350 @@
+/* Configurações Gerais do Site */
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+div.clear{clear:both;}
+
+div.center{
+    margin:0 auto;
+    padding: 0 2%;
+    max-width:1400px;
+}
+
+.selected{
+	color:var(--amareloPadrao);
+	font-style: italic;
+}
+
+.overlay{
+	z-index: 1;
+	top:0;
+	left:0;
+	position:absolute;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.15);
+}
+
+/* Variáveis do Site */
+
+:root{
+	--verdePadrao:#09b46a;
+	--verdeClaro: #43e09c;
+	--brancoPadrao: #fff;
+	--pretoPadrao: #292929;
+	--amareloPadrao:#D0A701;
+
+	/* TODO:
+	   - DETERMINAR O PESO DA FONTE P/ TÍTULOS & TEXTOS;
+	   - DETERMINAR O TAMANHO DE FONTE P/ TÍTULOS & TEXTOS;
+	   - ...;
+	 */
+}
+
+/* Fim Configurações Variáveis do Site */
+
+/* Configuração do Slick Slider */
+
+.slick-dotted ul{
+	list-style-type: none;
+	text-align: center;
+	position: relative;
+	margin-top:50px;
+}
+
+.slick-dotted li{
+	display: inline-block;
+	margin: 0 7px;
+}
+
+.slick-dotted button:focus{
+	outline: 0;
+}
+
+.slick-dotted li button{
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	color: #ccc;
+	border-width: 0;
+	background: #ccc;
+	opacity: 1;
+	cursor: pointer;
+}
+
+li.slick-active button{
+	background: var(--verdeClaro);
+	color: var(--verdeClaro);
+}
+
+.slick-slide:focus { outline: none; }
+
+/* Fim Configuração Slick Slider */
+
+/* Fim Configurações Gerais do Site */
+
+
+/* --------------------------------- */
+
+
+/* Configurações do Header */
+
+header.cabecalho{
+	padding: 15px 2%;
+	background-color:var(--pretoPadrao);
+}
+
+.logo{
+	width:100%;
+	max-width: 200px;
+	height:80px;
+	float:left;
+}
+
+.menu-desktop, .menu-mobile{
+	float:right;
+}
+
+.menu-desktop ul li{
+	display: inline-block;
+	padding:25px 5px;
+}
+
+.menu-desktop a, .menu-mobile a{
+	text-decoration: none;
+	color:var(--verdePadrao);
+	font-variant: small-caps;
+	font-weight: bold;
+	font-size:1.5rem;
+}
+
+.menu-desktop a:hover, .menu-mobile a:hover{
+	transition-duration: 0.5s;
+	color:var(--verdeClaro);
+}
+
+.menu-mobile{
+	display:none;
+	cursor:pointer;
+	padding:20px 5px;
+}
+
+.menu-mobile i{
+	font-size:2em;
+	color:var(--verdePadrao);
+}
+
+.menu-mobile ul{
+	display:none;
+	width:100%;
+	z-index:999;
+	position:absolute;
+	top:13%;
+	left:0;
+	list-style: none;
+	list-style-position: inside;
+	background-color:var(--pretoPadrao);
+}
+
+.menu-mobile li{
+	text-align: center;
+	padding:8px 0;
+	border-bottom:1px solid var(--brancoPadrao);
+}
+
+.menu-mobile li:first-child{
+	border-top:1px solid var(--brancoPadrao);
+}
+
+/* Fim Configurações do Header */
+
+/* Configurações da Main */
+
+/* Config. Chamada (Banner) */
+
+.bannerSingle{
+	position: relative;
+	background-color:#ccc;
+	min-height:420px;
+}
+
+.bannerSingle .center{
+	position:relative;
+	z-index:2;
+}
+
+.bannerText{
+	position:absolute;
+	top:240px;
+}
+
+.bannerText h1{
+	font-size:3rem;
+    font-variant: small-caps;
+}
+
+.bannerText p{
+	width:100%;
+	max-width:680px;
+	line-height:24px;
+	font-size:1rem;
+}
+
+/* Fim Config. Chamada (Banner) */
+
+/* Config. Especialidades */
+
+section.especialidades{
+	margin:40px 0;
+	color:var(--pretoPadrao);
+}
+
+.especialidades .center > h2{
+	font-variant: small-caps;
+	font-size:2.2rem;
+	text-align: center;
+	margin-bottom:5%;
+}
+
+nav.slider-especialidades{
+	width:100%;
+	overflow: hidden;
+}
+
+.especialidades-single{
+	display:inline-block;
+	width:33.3%;
+	text-align: center;
+	/* background-color: #292929; */
+	margin:0 20px;
+	background-color: #fff;
+	border-radius: 20px;
+	border:1px solid #ccc;
+	box-shadow: 0px 0px 12px -4px rgba(0,0,0,0.6);
+}
+
+.especialidades-single i{
+	font-size:2rem;
+	margin:20px 0;
+	color:var(--verdeClaro);
+}
+
+.especialidades-single h3{
+	font-size: 1.8rem;
+	font-variant: small-caps;
+}
+
+.especialidades-single > p{
+	display:inline-block;
+	max-width:350px;
+	text-align:left;
+	margin-top:15px;
+}
+
+button.saiba-mais{
+	display:block;
+	margin: 50px auto 20px auto;
+	background-color: var(--pretoPadrao);
+	color:#fff;
+	outline:0;
+	border:1px solid var(--pretoPadrao);
+	padding:10px 20px;
+	border-radius: 8px;
+	cursor:pointer;
+	font-size: 1.5rem;
+	font-variant: small-caps;
+}
+
+/* Fim Config. Especialidades */
+
+/* Fim Configurações da Main */
+
+
+/* Configurações do Footer */
+
+footer.rodape{
+	padding:2%;
+	background-color:var(--pretoPadrao);
+}
+
+.flex-footer{
+	display:flex;
+	flex-wrap: wrap;
+}
+.flex-column{
+	width:20%;
+	padding:1%;
+}
+
+.flex-column h2{
+	color:var(--verdePadrao);
+	font-variant: small-caps;
+	padding-bottom:5px;
+}
+
+.flex-column p{
+	color:var(--brancoPadrao);
+	padding:3px 0;
+}
+
+.flex-column:last-child{
+	width:40%;
+	text-align: right;
+}
+
+.direitos-reservados{
+	border-top:1px solid var(--verdePadrao);
+	margin-top:50px;
+	padding:20px 0 10px 0;
+	color:var(--brancoPadrao);
+	font-size:16px;
+}
+
+.direitos-reservados i{
+	font-size:10px;
+}
+
+/* Fim Configurações do Footer */
+
+
+/* Configurações do Responsivo */
+
+@media screen and (max-width:1024px){
+	.flex-footer{
+		display:block;
+	}
+
+	.flex-column{
+		width:100%;	
+		text-align: center;
+	}
+
+	.flex-column:last-child{
+		width:100%;
+		text-align: center;
+	}
+
+	.direitos-reservados{
+		text-align: center;
+	}
+}
+
+@media screen and (max-width:768px){
+
+	nav.menu-desktop{
+		display:none;
+	}
+
+	nav.menu-mobile{
+		display:block;
+	}
+}
+
+/* Fim Configurações do Responsivo */

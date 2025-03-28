@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encriptografe suas mensagens de maneira fácil e rápida!">
+    <meta name="keywords" content="criptografia, rapido, facil, mensagem">
+    <meta name="author" content="Gabriel J. Escudine">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Cryptography Page - Start</title>
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div class="center">
+            <div class="logomarca">
+                <img src="img/logo.png" alt="Logomarca Alura">
+            </div>
+        </div><!--Centralização-->
+    </header><!--Header-->
+
+    <main class="principal">
+        <div class="center">
+            <section class="input-text">
+                <textarea name="textarea" id="inputText" placeholder="Digite seu texto..."></textarea>
+            </section>
+            
+            <section class="box__mensagem">
+                <div class="text-criptografado">
+                    <p id="outputText"></p>
+                </div>
+                <div class="image-single" id="image-single"><img src="img/searching.svg" alt="Nenhuma mensagem encontrada"></div>
+                <div class="text-single" id="text-single">
+                    <h2>Nenhuma mensagem encontrada</h2>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div><!--Text Single-->
+
+                <button id="btnCopiar" onclick="copiarTexto()">Copiar</button>
+                
+            </section><!--Box Mensagem-->
+            
+            
+        </div><!--Centralização-->
+
+            <section class="btn__acao">
+                <button id="btnEncriptar" onclick="criptografar(); alterarMensagem()">Criptografar</button>
+                <button id="btnDescriptar" onclick="descriptografar(); alterarMensagem()">Descriptografar</button>
+            </section>
+    </main><!--Principal-->
+
+    <footer class="rodape">
+        <div class="center">
+            <p>2024&copy; Copyright</p>
+            <p>Feito por Gabriel J. Escudine</p>
+        </div><!--Centralização-->
+    </footer><!--Rodapé-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/function.js"></script>
+</body>
+</html>

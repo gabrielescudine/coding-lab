@@ -1,0 +1,26 @@
+@import "../../reset.css";
+@import "../../standard.css";
+
+.rodape {
+    padding:80px;
+    background-color:var(--azulPrincipal);
+    background-image:url("/public/images/fundo.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+    color:#fff;
+}
+
+.rodape > .container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redeSocial ul li {
+    display:inline-block;
+    margin-right:32px;
+}
+
+.rodape ul li:last-child {
+    margin-right: 0;
+}

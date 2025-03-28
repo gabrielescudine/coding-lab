@@ -1,0 +1,229 @@
+@charset "utf-8";
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,body{
+    height:100%;
+    background-color:rgba(245, 245, 220, 0.404);
+    overflow:hidden;
+}
+
+/* Classes Gerais */
+
+.center{
+    max-width:1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.clear{
+    clear:both;
+}
+
+a.destaque{
+    color:#017143 !important;
+    text-decoration: none;
+    background-color: rgba(0,0,0,0) !important;
+    padding: 0 !important;
+    font-weight:bold !important;;
+    font-variant: normal !important;    
+}
+
+/*             */
+
+/* Configuração Header */
+
+.logo{
+    width:50%;
+    padding: 2%;
+}
+
+.menu{
+    width:50%;
+    padding: 3%;
+    text-align:right;
+}
+
+.menu ul li{
+    display:inline-block;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: rgb(43, 43, 43);
+    padding-right: 10px;
+    
+}
+
+.menu ul li a:hover{
+    color: rgb(63, 182, 48);
+    transition-duration:0.5s;
+}
+
+/*  */
+
+/* Configurações Section Sobre */
+
+section.sobre{
+    position:relative;
+    margin: 100px 0 0 0;
+    width:calc(100% - 200px);
+}
+
+section.sobre h1{
+    font-size: 2.5em;
+}
+
+section.sobre p{
+    color: rgb(43, 43, 43);
+    font-weight: 700;
+    width:80%;
+    margin: 1.5% 0 3% 0;
+    
+}
+
+section.sobre a{
+    text-decoration: none;
+    color:white;
+    background-color:#017143;
+    padding: 10px;
+    font-weight: 600;
+    font-variant: small-caps;
+    border-radius: 5px;
+}
+
+/*  */
+
+/* Configurações Aside */
+
+aside.extras{
+    position: absolute;
+    background-color:#017143;
+    border-radius:50%;
+    top:17%;
+    left:70%;
+    width: 45%;
+    height:90%
+}
+
+aside ul li{
+    list-style-type: none;
+    padding: 1.5% 0;
+}
+
+div.socials{
+    position:absolute;
+    top:25%;
+    right: 35%;
+}
+
+
+/*  */
+
+/* Configuração Footer */
+
+    footer{
+        display:none;
+        position: fixed;
+        left:0;
+        bottom:0;
+        width:100%;
+        text-align: center;
+        border-top: 3px solid #017142;
+        padding: 2%;
+    }
+
+
+    div.socials-footer ul li{
+        display: inline-block;
+        list-style-type: none;
+        padding: 2% 1.5%;
+    }
+
+/*  */
+
+/* Começo Responsivo */
+
+@media screen and (max-width:1024px){
+
+    div.img-sobre img{
+        width: 70%;    
+        position:absolute;
+        top:10%;
+        left:-15%;
+    }
+
+    aside.extras{
+        top:17%;
+        left:70%;
+        width: 45%;
+        height:86%
+    }
+}
+
+@media screen and (max-width:482px){
+
+    html,body{overflow:visible;}
+
+    header.cabecalho{
+        background-color:#017142;
+    }
+
+    header .logo{
+        width:100%;
+        text-align: center;
+    }
+
+    nav.menu{
+        width:100%;
+        max-width:100%;
+        text-align: center;
+    }
+
+    nav.menu ul li a{
+        color:white;
+        font-weight:600;
+    }
+
+    section.sobre{
+        position: static;
+        text-align: center;
+        margin: 25px 0 0 0;
+        width:100%;
+        max-width:100%;
+    }
+
+    section.sobre h1{
+        font-size:2em;
+        padding: 5px 0 5px 0;
+    }
+
+    section.sobre p{
+        max-width:100%;
+        width:100%;
+        text-align: justify;
+        padding: 0 2% 5% 2%;
+    } 
+
+    .extras{
+        display:none;
+    }
+
+    footer{
+        display:block;
+    }
+
+    footer .socials-footer img{
+        width:60%;
+        max-width:100%;
+    }
+
+
+}
